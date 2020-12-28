@@ -1467,13 +1467,13 @@ textarea {
 }
 
 a {
-  color: #337ab7;
+  color: #e62020;
   text-decoration: none
 }
 
 a:focus,
 a:hover {
-  color: #23527c;
+  color: #e62020;
   text-decoration: none;
 }
 
@@ -1749,12 +1749,12 @@ mark {
 }
 
 .text-primary {
-  color: #337ab7
+  color: #e62020
 }
 
 a.text-primary:focus,
 a.text-primary:hover {
-  color: #286090
+  color: #e62020
 }
 
 .text-success {
@@ -1767,12 +1767,12 @@ a.text-success:hover {
 }
 
 .text-info {
-  color: #31708f
+  color: #e62020
 }
 
 a.text-info:focus,
 a.text-info:hover {
-  color: #245269
+  color: #e62020
 }
 
 .text-warning {
@@ -1795,12 +1795,12 @@ a.text-danger:hover {
 
 .bg-primary {
   color: #fff;
-  background-color: #337ab7
+  background-color: #e62020
 }
 
 a.bg-primary:focus,
 a.bg-primary:hover {
-  background-color: #286090
+  background-color: #e62020
 }
 
 .bg-success {
