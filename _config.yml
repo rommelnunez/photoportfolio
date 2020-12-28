@@ -1,21 +1,21 @@
 # Site settings
-title: PHOTORAMA
-email: ""
-description: "Photo Journal"
+title: ROMMEL NUNEZ
+email: "rnunezphotographybusiness@gmail.com"
+description: "Portrait Photography"
 url: "https://rommelnunez.github.io"
 baseurl: "/photoportfolio"
-facebook_username: ""
-twitter_username: ""
-instagram_username: ""
-github_username:  ""
-deviantart_username: ""
-flickr_username: ""
-discus_shortname: ""
+facebook_username: "rommelnun"
+twitter_username: "rommelnunezg"
+instagram_username: "rommel.n.g"
+github_username:  "rommelnunez"
+# deviantart_username: 
+# flickr_username: ""
+# discus_shortname: ""
 share: true
 
 # Owner/author information
 owner:
-  name:   photorama
+  name:   Rommel Nunez
   avatar: avatar.png
   favicon: favicon.ico
   info: photography website template
