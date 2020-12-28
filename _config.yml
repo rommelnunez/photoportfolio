@@ -34,7 +34,7 @@ comments :
 # Internal nav
 nav:
   - GALLERY: "https://rommelnunez.github.io/photoportfolio/gallery/"  
-  - JOURNAL: "https://rommelnunez.github.io/photoportfolio/journal/"
+ # - JOURNAL: "https://rommelnunez.github.io/photoportfolio/journal/"
   - ABOUT: "https://rommelnunez.github.io/photoportfolio/about/"
 
 # All translation keys
