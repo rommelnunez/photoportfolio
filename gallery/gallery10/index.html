@@ -1,0 +1,137 @@
+---
+layout: page
+title: "IVAN"
+description: "@ Laredo, TX"
+active: gallery
+header-img: "img/gallery-bg.jpg"
+album-title: "IVAN"
+images:
+ - image_path: /gallery/archive/g10/ivan-1.jpg
+   caption: Ivan 1
+   mfp-title: Ivan 1
+   copyright: © rommel nunez
+ - image_path: /gallery/archive/g10/ivan-2.jpg
+   caption: Ivan 2
+   mfp-title: Ivan 2
+   copyright: © rommel nunez
+ - image_path: /gallery/archive/g10/ivan-3.jpg
+   caption: Ivan 3
+   mfp-title: Ivan 3
+   copyright: © rommel nunez
+ - image_path: /gallery/archive/g10/ivan-4.jpg
+   caption: Ivan 4
+   mfp-title: Ivan 4
+   copyright: © rommel nunez
+ - image_path: /gallery/archive/g10/ivan-5.jpg
+   caption: Ivan 5
+   mfp-title: Ivan 5
+   copyright: © rommel nunez
+ - image_path: /gallery/archive/g10/ivan-6.jpg
+   caption: Ivan 6
+   mfp-title: Ivan 6
+   copyright: © rommel nunez
+ - image_path: /gallery/archive/g10/ivan-7.jpg
+   caption: Ivan 7
+   mfp-title: Ivan 7
+   copyright: © rommel nunez
+ - image_path: /gallery/archive/g10/ivan-8.jpg
+   caption: Ivan 8
+   mfp-title: Ivan 8
+   copyright: © rommel nunez
+ - image_path: /gallery/archive/g10/ivan-9.jpg
+   caption: Ivan 9
+   mfp-title: Ivan 9
+   copyright: © rommel nunez
+ - image_path: /gallery/archive/g10/ivan-10.jpg
+   caption: Ivan 10
+   mfp-title: Ivan 10
+   copyright: © rommel nunez
+ - image_path: /gallery/archive/g10/ivan-11.jpg
+   caption: Ivan 11
+   mfp-title: Ivan 11
+   copyright: © rommel nunez
+ - image_path: /gallery/archive/g10/ivan-12.jpg
+   caption: Ivan 12
+   mfp-title: Ivan 12
+   copyright: © rommel nunez
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+</head>
+
+    <body>
+ 
+	<section id="content" role="main">
+		<div class="wrapper">
+	<br><br>
+			<h2>{{page.album-title}}</h2>
+
+
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+		
+{% for image in page.images %}  		
+
+				<figure class="gallery-item">
+					<header class='gallery-icon'>
+
+<a href="{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+<img src="{{ site.baseurl }}{{ image.image_path }}"></a>
+						
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<h3>{{image.caption}}</h3>
+							<p>{{image.copyright}}</p>
+						</div>
+					</figcaption>
+				</figure>
+				
+{% endfor %}
+
+			</div>
+
+		</div><!-- END .wrapper -->
+	</section>
+
+<!-- jQuery -->    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- include image popups -->
+<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function($) {
+        $('a.popup').magnificPopup({
+          type: 'image',
+	  gallery:{
+         enabled:true,
+         navigateByImgClick: true,
+         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+       },
+      image: {
+         titleSrc: function(item) {
+              return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+            }
+        }
+          // other options
+      });
+});
+    </script>
+
+</body></html>
